@@ -1,0 +1,38 @@
+/src/generated/prisma
+# --- Node.js backend ---
+node_modules/
+logs/
+*.log
+.env
+.env.*
+dist/
+build/
+auth_info_baileys/
+session.data.json
+auth_info.json
+
+# --- Frontend (Vue 3 + Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.vitepress/
+frontend/.cache/
+frontend/.env
+frontend/.env.*
+
+# Editor & OS
+frontend/.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Testing & coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.old

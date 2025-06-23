@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",                       // Sets the root directory for module resolution to project root
+    "paths": {
+      "@/*": ["src/*"],                    // Allows imports like `@/components/Button` instead of relative paths
+      // "@components/*": ["src/components/*"],
+      // "@utils/*": ["src/utils/*"]
+    },
+    "target": "ESNext",                   // Use the latest JavaScript features for better developer experience
+    "module": "ESNext",                   // Use modern ES module syntax (`import/export`)
+    "moduleResolution": "Node",          // Mimics Node.js module resolution strategy
+    "allowJs": true,                      // Allow JavaScript files to be part of the project
+    "checkJs": false,                     // Skip type-checking for JavaScript files (useful for mixed JS/TS projects)
+    "jsx": "preserve",                    // Keep JSX intact for tools like Vite or Vue JSX transforms
+    "strict": false                       // Disable strict type checks (you can set to true for stricter TS behavior)
+  },
+  "include": [
+    "src/**/*",                           // Include all files inside `src/`
+    "components/**/*"                     // Include files from a custom `components/` folder if it's outside `src`
+  ],
+  "exclude": [
+    "node_modules",                       // Exclude dependencies for performance and to avoid type conflicts
+    "dist"                                // Exclude the output build directory
+  ]
+}
